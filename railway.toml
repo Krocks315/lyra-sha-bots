@@ -1,0 +1,8 @@
+[build]
+builder = "railpack"
+
+[deploy]
+startCommand = "python main.py"
+healthcheckPath = "/health"
+healthcheckTimeout = 300
+restartPolicyType = "always"
